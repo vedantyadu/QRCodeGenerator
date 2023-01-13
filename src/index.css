@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+    .input {
+        @apply w-full h-10 mt-4 first:mt-0 rounded-md p-4 outline-none placeholder-grey-500 bg-gradient-to-r from-grey-800 to-grey-900 text-[#ffffff];
+    }
+    ::-webkit-scrollbar-thumb{
+        @apply bg-transparent shadow-sm
+    }
+    ::-webkit-scrollbar{
+        @apply w-3 bg-grey-800
+    }
+    ::-webkit-scrollbar-thumb{
+        @apply bg-grey-600 rounded-md
+    }
+}
