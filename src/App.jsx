@@ -42,7 +42,6 @@ function App() {
 
     // Convert svg node to xml string
     var xml = new XMLSerializer().serializeToString(svgRef.current.firstChild)
-    console.log(xml)
     var svg64 = btoa(xml)
     var b64Start = 'data:image/svg+xml;base64,'
     var image64 = b64Start + svg64
